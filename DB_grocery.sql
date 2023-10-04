@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS purchase_order_detail(
 );
 
 
-create table if not exists sale_orders(
+CREATE TABLE IF NOT EXISTSsale_orders(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     sale_date DATETIME,
     total_price DECIMAL(10,2),
@@ -103,7 +103,7 @@ create table if not exists sale_orders(
 );
 
 
-create table if not exists sale_order_detail(
+CREATE TABLE IF NOT EXISTS sale_order_detail(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     quantity INT,
     purchase_price DECIMAL(10,2),
