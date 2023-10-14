@@ -22,25 +22,43 @@ The database is designed to reach 3NF standards, with prime attributes <strong>(
 </ul>
 
 <h4>List functional dependencies:</h4>
-• Table Products
-    product_id → product_name, barcode, purchase_price, selling_price, last_updated
-    purchase_price, selling_price → avg_price
-• Table Units
-    unit_id → unit_name, quantity
-    unit_name, quantity, product_id → purchase_price, selling_price
-• Table Suppliers
-    supplier_id → name, phone, zip_code, street_address, city, country
-• Table Customers
-    customer_id → name, phone, zip_code, street_address, city, country
-• Table Employees
-    employee_id → name, phone, zip_code, street_address, city, country, username, password
-• Table PurchaseOrder
-    purchase_order_id → pur_date, employee_id, supplier_id, total_price
-• Table PurchaseOrderDetail
-    purchase_order_detail_id → quantity, purchase_price, purchase_order_id
-    quantity, purchase_price, product_id → total_amount
-• Table SaleOrder
-    sale_order_id → sale_date, employee_id, customer_id, total_price
-• Table SaleOrderDetail
-    sale_order_detail_id → quantity, purchase_price, selling_price, sale_order_id
-    quantity, selling_price, product_id → total_amount
+<ul><li>Table Products</li></ul>
+<dl>
+    <dd>product_id → product_name, barcode, purchase_price, selling_price, last_updated</dd>
+    <dd>purchase_price, selling_price → avg_price</dd>
+</dl>
+<ul><li>Table Units</li></ul>
+<dl>
+    <dd>unit_id → unit_name, quantity</dd>
+    <dd>unit_name, quantity, product_id → purchase_price, selling_price</dd>
+</dl>
+<ul><li>Table Suppliers</li></ul>
+<dl>
+    <dd>supplier_id → name, phone, zip_code, street_address, city, country</dd>
+</dl>
+<ul><li>Table Customers</li></ul>
+<dl>
+    <dd>customer_id → name, phone, zip_code, street_address, city, country</dd>
+</dl>
+<ul><li>Table Employees</li></ul>
+<dl>
+    <dd>employee_id → name, phone, zip_code, street_address, city, country, username, password</dd>
+</dl>
+<ul><li>Table PurchaseOrder</li></ul>
+<dl>
+    <dd>purchase_order_id → pur_date, employee_id, supplier_id, total_price</dd>
+</dl>
+<ul><li>Table PurchaseOrderDetail</li></ul>
+<dl>
+    <dd>purchase_order_detail_id → quantity, purchase_price, purchase_order_id</dd>
+    <dd>quantity, purchase_price, product_id → total_amount</dd>
+</dl>
+<ul><li>Table SaleOrder</li></ul>
+<dl>
+    <dd>sale_order_id → sale_date, employee_id, customer_id, total_price</dd>
+</dl>
+<ul><li>Table SaleOrderDetail</li></ul>
+<dl>
+    <dd>sale_order_detail_id → quantity, purchase_price, selling_price, sale_order_id</dd>
+    <dd>quantity, selling_price, product_id → total_amount</dd>
+</dl>
