@@ -63,8 +63,9 @@ The database is designed to reach 3NF standards, with prime attributes <strong>(
     <dd>quantity, selling_price, product_id → total_amount</dd>
 </dl>
 
+<!--
 <h4>Database schema</h4>
 <div align="center">
     <img align="center" src="https://i.ibb.co/JrNqbGL/EER-grocery.png" alt="EER-grocery" border="0">
 </div>
-
+-->
