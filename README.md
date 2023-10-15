@@ -64,7 +64,7 @@ The database is designed to reach 3NF standards, with prime attributes <strong>(
 </dl>
 
 <h4>Database schema</h4>
-<p align="center">
+<div align="center">
     <img align="center" src="https://i.ibb.co/JrNqbGL/EER-grocery.png" alt="EER-grocery" border="0">
-</p>
+</div>
 
